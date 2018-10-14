@@ -4,7 +4,7 @@
 #
 Name     : perl-XML-Feed
 Version  : 0.55
-Release  : 4
+Release  : 5
 URL      : https://cpan.metacpan.org/authors/id/D/DA/DAVECROSS/XML-Feed-0.55.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DA/DAVECROSS/XML-Feed-0.55.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libx/libxml-feed-perl/libxml-feed-perl_0.53+dfsg-1.debian.tar.xz
@@ -13,20 +13,45 @@ Group    : Development/Tools
 License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0
 Requires: perl-XML-Feed-license = %{version}-%{release}
 BuildRequires : buildreq-cpan
+BuildRequires : perl(B::Hooks::EndOfScope)
+BuildRequires : perl(Class::Data::Inheritable)
 BuildRequires : perl(Class::ErrorHandler)
+BuildRequires : perl(Class::Inspector)
+BuildRequires : perl(Class::Singleton)
 BuildRequires : perl(DateTime)
 BuildRequires : perl(DateTime::Format::Mail)
+BuildRequires : perl(DateTime::Locale)
+BuildRequires : perl(DateTime::TimeZone)
+BuildRequires : perl(Devel::StackTrace)
+BuildRequires : perl(Eval::Closure)
+BuildRequires : perl(Exception::Class)
 BuildRequires : perl(Feed::Find)
+BuildRequires : perl(File::ShareDir)
 BuildRequires : perl(HTML::Entities)
 BuildRequires : perl(HTML::TokeParser)
+BuildRequires : perl(HTTP::Date)
+BuildRequires : perl(HTTP::Request)
 BuildRequires : perl(LWP::UserAgent)
+BuildRequires : perl(MRO::Compat)
+BuildRequires : perl(Module::Implementation)
 BuildRequires : perl(Module::Pluggable)
+BuildRequires : perl(Module::Runtime)
+BuildRequires : perl(Package::Stash)
+BuildRequires : perl(Params::ValidationCompiler)
+BuildRequires : perl(Role::Tiny)
+BuildRequires : perl(Specio::Exporter)
+BuildRequires : perl(Sub::Exporter::Progressive)
+BuildRequires : perl(Sub::Identify)
+BuildRequires : perl(Try::Tiny)
 BuildRequires : perl(URI)
 BuildRequires : perl(URI::Fetch)
+BuildRequires : perl(Variable::Magic)
 BuildRequires : perl(XML::Atom)
 BuildRequires : perl(XML::LibXML)
 BuildRequires : perl(XML::RSS)
 BuildRequires : perl(XML::XPath)
+BuildRequires : perl(namespace::autoclean)
+BuildRequires : perl(namespace::clean)
 
 %description
 $Id$
