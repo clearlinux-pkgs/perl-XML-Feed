@@ -118,15 +118,15 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.0/XML/Feed.pm
-/usr/lib/perl5/vendor_perl/5.28.0/XML/Feed/Content.pm
-/usr/lib/perl5/vendor_perl/5.28.0/XML/Feed/Enclosure.pm
-/usr/lib/perl5/vendor_perl/5.28.0/XML/Feed/Entry.pm
-/usr/lib/perl5/vendor_perl/5.28.0/XML/Feed/Entry/Format/Atom.pm
-/usr/lib/perl5/vendor_perl/5.28.0/XML/Feed/Entry/Format/RSS.pm
-/usr/lib/perl5/vendor_perl/5.28.0/XML/Feed/Format/Atom.pm
-/usr/lib/perl5/vendor_perl/5.28.0/XML/Feed/Format/RSS.pm
-/usr/lib/perl5/vendor_perl/5.28.0/XML/Feed/Util.pm
+/usr/lib/perl5/vendor_perl/5.28.1XML/Feed.pm
+/usr/lib/perl5/vendor_perl/5.28.1XML/Feed/Content.pm
+/usr/lib/perl5/vendor_perl/5.28.1XML/Feed/Enclosure.pm
+/usr/lib/perl5/vendor_perl/5.28.1XML/Feed/Entry.pm
+/usr/lib/perl5/vendor_perl/5.28.1XML/Feed/Entry/Format/Atom.pm
+/usr/lib/perl5/vendor_perl/5.28.1XML/Feed/Entry/Format/RSS.pm
+/usr/lib/perl5/vendor_perl/5.28.1XML/Feed/Format/Atom.pm
+/usr/lib/perl5/vendor_perl/5.28.1XML/Feed/Format/RSS.pm
+/usr/lib/perl5/vendor_perl/5.28.1XML/Feed/Util.pm
 
 %files dev
 %defattr(-,root,root,-)
