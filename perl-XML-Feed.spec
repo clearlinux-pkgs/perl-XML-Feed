@@ -4,7 +4,7 @@
 #
 Name     : perl-XML-Feed
 Version  : 0.59
-Release  : 15
+Release  : 16
 URL      : https://cpan.metacpan.org/authors/id/D/DA/DAVECROSS/XML-Feed-0.59.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DA/DAVECROSS/XML-Feed-0.59.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libx/libxml-feed-perl/libxml-feed-perl_0.53+dfsg-1.debian.tar.xz
@@ -13,21 +13,29 @@ Group    : Development/Tools
 License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0
 Requires: perl-XML-Feed-data = %{version}-%{release}
 Requires: perl-XML-Feed-license = %{version}-%{release}
+Requires: perl(DateTime::Format::Builder)
 Requires: perl(DateTime::Format::Flexible)
+Requires: perl(DateTime::Format::ISO8601)
+Requires: perl(XML::RSS::LibXML)
 BuildRequires : buildreq-cpan
 BuildRequires : perl(B::Hooks::EndOfScope)
 BuildRequires : perl(Class::Data::Inheritable)
 BuildRequires : perl(Class::ErrorHandler)
 BuildRequires : perl(Class::Inspector)
 BuildRequires : perl(Class::Singleton)
+BuildRequires : perl(Clone)
 BuildRequires : perl(DateTime)
+BuildRequires : perl(DateTime::Format::Builder)
 BuildRequires : perl(DateTime::Format::Flexible)
+BuildRequires : perl(DateTime::Format::ISO8601)
 BuildRequires : perl(DateTime::Format::Mail)
 BuildRequires : perl(DateTime::Format::Natural)
+BuildRequires : perl(DateTime::Format::Strptime)
 BuildRequires : perl(DateTime::Format::W3CDTF)
 BuildRequires : perl(DateTime::Locale)
 BuildRequires : perl(DateTime::TimeZone)
 BuildRequires : perl(Devel::StackTrace)
+BuildRequires : perl(Encode::Locale)
 BuildRequires : perl(Eval::Closure)
 BuildRequires : perl(Exception::Class)
 BuildRequires : perl(Feed::Find)
@@ -37,6 +45,7 @@ BuildRequires : perl(HTML::TokeParser)
 BuildRequires : perl(HTTP::Date)
 BuildRequires : perl(HTTP::Request)
 BuildRequires : perl(LWP::UserAgent)
+BuildRequires : perl(List::MoreUtils)
 BuildRequires : perl(MRO::Compat)
 BuildRequires : perl(Module::Implementation)
 BuildRequires : perl(Module::Pluggable)
@@ -56,7 +65,9 @@ BuildRequires : perl(XML::Atom)
 BuildRequires : perl(XML::LibXML)
 BuildRequires : perl(XML::Parser)
 BuildRequires : perl(XML::RSS)
+BuildRequires : perl(XML::RSS::LibXML)
 BuildRequires : perl(XML::XPath)
+BuildRequires : perl(boolean)
 BuildRequires : perl(namespace::autoclean)
 BuildRequires : perl(namespace::clean)
 
