@@ -3,4 +3,5 @@
 perl(DateTime::Format::Builder)
 perl(DateTime::Format::Flexible)
 perl(DateTime::Format::ISO8601)
+perl(DateTime::Format::Natural)
 perl(XML::RSS::LibXML)
