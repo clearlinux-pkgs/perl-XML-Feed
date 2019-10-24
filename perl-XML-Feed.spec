@@ -4,15 +4,15 @@
 #
 Name     : perl-XML-Feed
 Version  : 0.59
-Release  : 17
+Release  : 18
 URL      : https://cpan.metacpan.org/authors/id/D/DA/DAVECROSS/XML-Feed-0.59.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DA/DAVECROSS/XML-Feed-0.59.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libx/libxml-feed-perl/libxml-feed-perl_0.53+dfsg-1.debian.tar.xz
 Summary  : 'XML Syndication Feed Support'
 Group    : Development/Tools
 License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0
-Requires: perl-XML-Feed-data = %{version}-%{release}
 Requires: perl-XML-Feed-license = %{version}-%{release}
+Requires: perl-XML-Feed-perl = %{version}-%{release}
 Requires: perl(DateTime::Format::Builder)
 Requires: perl(DateTime::Format::Flexible)
 Requires: perl(DateTime::Format::ISO8601)
@@ -76,18 +76,9 @@ BuildRequires : perl(namespace::clean)
 This is XML::Feed, an abstraction above the RSS and Atom syndication
 feed formats. It supports both parsing and autodiscovery of feeds.
 
-%package data
-Summary: data components for the perl-XML-Feed package.
-Group: Data
-
-%description data
-data components for the perl-XML-Feed package.
-
-
 %package dev
 Summary: dev components for the perl-XML-Feed package.
 Group: Development
-Requires: perl-XML-Feed-data = %{version}-%{release}
 Provides: perl-XML-Feed-devel = %{version}-%{release}
 Requires: perl-XML-Feed = %{version}-%{release}
 
@@ -101,6 +92,15 @@ Group: Default
 
 %description license
 license components for the perl-XML-Feed package.
+
+
+%package perl
+Summary: perl components for the perl-XML-Feed package.
+Group: Default
+Requires: perl-XML-Feed = %{version}-%{release}
+
+%description perl
+perl components for the perl-XML-Feed package.
 
 
 %prep
@@ -147,18 +147,6 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 %files
 %defattr(-,root,root,-)
 
-%files data
-%defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed.pm
-/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Content.pm
-/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Enclosure.pm
-/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Entry.pm
-/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Entry/Format/Atom.pm
-/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Entry/Format/RSS.pm
-/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Format/Atom.pm
-/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Format/RSS.pm
-/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Util.pm
-
 %files dev
 %defattr(-,root,root,-)
 /usr/share/man/man3/XML::Feed.3
@@ -170,3 +158,15 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 %files license
 %defattr(0644,root,root,0755)
 /usr/share/package-licenses/perl-XML-Feed/808cdef4c992763637fe5a5a7551c6cd5186080b
+
+%files perl
+%defattr(-,root,root,-)
+/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed.pm
+/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Content.pm
+/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Enclosure.pm
+/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Entry.pm
+/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Entry/Format/Atom.pm
+/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Entry/Format/RSS.pm
+/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Format/Atom.pm
+/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Format/RSS.pm
+/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Util.pm
