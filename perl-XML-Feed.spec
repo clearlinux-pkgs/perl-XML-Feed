@@ -4,7 +4,7 @@
 #
 Name     : perl-XML-Feed
 Version  : 0.59
-Release  : 18
+Release  : 19
 URL      : https://cpan.metacpan.org/authors/id/D/DA/DAVECROSS/XML-Feed-0.59.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DA/DAVECROSS/XML-Feed-0.59.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libx/libxml-feed-perl/libxml-feed-perl_0.53+dfsg-1.debian.tar.xz
@@ -42,6 +42,7 @@ BuildRequires : perl(Exception::Class)
 BuildRequires : perl(Feed::Find)
 BuildRequires : perl(File::ShareDir)
 BuildRequires : perl(HTML::Entities)
+BuildRequires : perl(HTML::Parser)
 BuildRequires : perl(HTML::TokeParser)
 BuildRequires : perl(HTTP::Date)
 BuildRequires : perl(HTTP::Request)
@@ -105,10 +106,11 @@ perl components for the perl-XML-Feed package.
 
 %prep
 %setup -q -n XML-Feed-0.59
-cd ..
-%setup -q -T -D -n XML-Feed-0.59 -b 1
+cd %{_builddir}
+tar xf %{_sourcedir}/libxml-feed-perl_0.53+dfsg-1.debian.tar.xz
+cd %{_builddir}/XML-Feed-0.59
 mkdir -p deblicense/
-cp -r %{_topdir}/BUILD/debian/* %{_topdir}/BUILD/XML-Feed-0.59/deblicense/
+cp -r %{_builddir}/debian/* %{_builddir}/XML-Feed-0.59/deblicense/
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -161,12 +163,12 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed.pm
-/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Content.pm
-/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Enclosure.pm
-/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Entry.pm
-/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Entry/Format/Atom.pm
-/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Entry/Format/RSS.pm
-/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Format/Atom.pm
-/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Format/RSS.pm
-/usr/lib/perl5/vendor_perl/5.28.2/XML/Feed/Util.pm
+/usr/lib/perl5/vendor_perl/5.30.1/XML/Feed.pm
+/usr/lib/perl5/vendor_perl/5.30.1/XML/Feed/Content.pm
+/usr/lib/perl5/vendor_perl/5.30.1/XML/Feed/Enclosure.pm
+/usr/lib/perl5/vendor_perl/5.30.1/XML/Feed/Entry.pm
+/usr/lib/perl5/vendor_perl/5.30.1/XML/Feed/Entry/Format/Atom.pm
+/usr/lib/perl5/vendor_perl/5.30.1/XML/Feed/Entry/Format/RSS.pm
+/usr/lib/perl5/vendor_perl/5.30.1/XML/Feed/Format/Atom.pm
+/usr/lib/perl5/vendor_perl/5.30.1/XML/Feed/Format/RSS.pm
+/usr/lib/perl5/vendor_perl/5.30.1/XML/Feed/Util.pm
