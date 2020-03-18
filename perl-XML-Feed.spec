@@ -4,7 +4,7 @@
 #
 Name     : perl-XML-Feed
 Version  : 0.59
-Release  : 19
+Release  : 20
 URL      : https://cpan.metacpan.org/authors/id/D/DA/DAVECROSS/XML-Feed-0.59.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DA/DAVECROSS/XML-Feed-0.59.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libx/libxml-feed-perl/libxml-feed-perl_0.53+dfsg-1.debian.tar.xz
@@ -135,7 +135,7 @@ make TEST_VERBOSE=1 test || :
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-XML-Feed
-cp %{_builddir}/XML-Feed-0.59/deblicense/copyright %{buildroot}/usr/share/package-licenses/perl-XML-Feed/808cdef4c992763637fe5a5a7551c6cd5186080b
+cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-XML-Feed/808cdef4c992763637fe5a5a7551c6cd5186080b
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -163,12 +163,12 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/XML/Feed.pm
-/usr/lib/perl5/vendor_perl/5.30.1/XML/Feed/Content.pm
-/usr/lib/perl5/vendor_perl/5.30.1/XML/Feed/Enclosure.pm
-/usr/lib/perl5/vendor_perl/5.30.1/XML/Feed/Entry.pm
-/usr/lib/perl5/vendor_perl/5.30.1/XML/Feed/Entry/Format/Atom.pm
-/usr/lib/perl5/vendor_perl/5.30.1/XML/Feed/Entry/Format/RSS.pm
-/usr/lib/perl5/vendor_perl/5.30.1/XML/Feed/Format/Atom.pm
-/usr/lib/perl5/vendor_perl/5.30.1/XML/Feed/Format/RSS.pm
-/usr/lib/perl5/vendor_perl/5.30.1/XML/Feed/Util.pm
+/usr/lib/perl5/vendor_perl/5.30.2/XML/Feed.pm
+/usr/lib/perl5/vendor_perl/5.30.2/XML/Feed/Content.pm
+/usr/lib/perl5/vendor_perl/5.30.2/XML/Feed/Enclosure.pm
+/usr/lib/perl5/vendor_perl/5.30.2/XML/Feed/Entry.pm
+/usr/lib/perl5/vendor_perl/5.30.2/XML/Feed/Entry/Format/Atom.pm
+/usr/lib/perl5/vendor_perl/5.30.2/XML/Feed/Entry/Format/RSS.pm
+/usr/lib/perl5/vendor_perl/5.30.2/XML/Feed/Format/Atom.pm
+/usr/lib/perl5/vendor_perl/5.30.2/XML/Feed/Format/RSS.pm
+/usr/lib/perl5/vendor_perl/5.30.2/XML/Feed/Util.pm
