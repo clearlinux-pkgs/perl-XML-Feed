@@ -4,7 +4,7 @@
 #
 Name     : perl-XML-Feed
 Version  : 0.61
-Release  : 23
+Release  : 24
 URL      : https://cpan.metacpan.org/authors/id/D/DA/DAVECROSS/XML-Feed-0.61.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DA/DAVECROSS/XML-Feed-0.61.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libx/libxml-feed-perl/libxml-feed-perl_0.53+dfsg-1.debian.tar.xz
@@ -137,12 +137,12 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.3/XML/Feed.pm
-/usr/lib/perl5/vendor_perl/5.30.3/XML/Feed/Content.pm
-/usr/lib/perl5/vendor_perl/5.30.3/XML/Feed/Enclosure.pm
-/usr/lib/perl5/vendor_perl/5.30.3/XML/Feed/Entry.pm
-/usr/lib/perl5/vendor_perl/5.30.3/XML/Feed/Entry/Format/Atom.pm
-/usr/lib/perl5/vendor_perl/5.30.3/XML/Feed/Entry/Format/RSS.pm
-/usr/lib/perl5/vendor_perl/5.30.3/XML/Feed/Format/Atom.pm
-/usr/lib/perl5/vendor_perl/5.30.3/XML/Feed/Format/RSS.pm
-/usr/lib/perl5/vendor_perl/5.30.3/XML/Feed/Util.pm
+/usr/lib/perl5/vendor_perl/5.32.1/XML/Feed.pm
+/usr/lib/perl5/vendor_perl/5.32.1/XML/Feed/Content.pm
+/usr/lib/perl5/vendor_perl/5.32.1/XML/Feed/Enclosure.pm
+/usr/lib/perl5/vendor_perl/5.32.1/XML/Feed/Entry.pm
+/usr/lib/perl5/vendor_perl/5.32.1/XML/Feed/Entry/Format/Atom.pm
+/usr/lib/perl5/vendor_perl/5.32.1/XML/Feed/Entry/Format/RSS.pm
+/usr/lib/perl5/vendor_perl/5.32.1/XML/Feed/Format/Atom.pm
+/usr/lib/perl5/vendor_perl/5.32.1/XML/Feed/Format/RSS.pm
+/usr/lib/perl5/vendor_perl/5.32.1/XML/Feed/Util.pm
