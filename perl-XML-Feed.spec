@@ -4,7 +4,7 @@
 #
 Name     : perl-XML-Feed
 Version  : 0.61
-Release  : 26
+Release  : 27
 URL      : https://cpan.metacpan.org/authors/id/D/DA/DAVECROSS/XML-Feed-0.61.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DA/DAVECROSS/XML-Feed-0.61.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libx/libxml-feed-perl/libxml-feed-perl_0.53+dfsg-1.debian.tar.xz
@@ -46,6 +46,7 @@ BuildRequires : perl(XML::RSS)
 BuildRequires : perl(XML::RSS::LibXML)
 BuildRequires : perl(XML::XPath)
 BuildRequires : perl(boolean)
+BuildRequires : perl(namespace::autoclean)
 
 %description
 This is XML::Feed, an abstraction above the RSS and Atom syndication
