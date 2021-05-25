@@ -1,4 +1,4 @@
-0.61
+0.63
 perl(Class::ErrorHandler)
 perl(Clone)
 perl(DateTime)
@@ -24,4 +24,3 @@ perl(XML::Parser)
 perl(XML::RSS)
 perl(XML::XPath)
 perl(boolean)
-perl(namespace::autoclean)
