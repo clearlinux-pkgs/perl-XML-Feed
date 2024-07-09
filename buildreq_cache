@@ -1,6 +1,5 @@
-0.63
+0.65
 perl(Class::ErrorHandler)
-perl(Clone)
 perl(DateTime)
 perl(DateTime::Format::Flexible)
 perl(DateTime::Format::ISO8601)
@@ -15,7 +14,6 @@ perl(HTML::TokeParser)
 perl(LWP::UserAgent)
 perl(List::MoreUtils)
 perl(Module::Pluggable)
-perl(Params::Validate)
 perl(URI)
 perl(URI::Fetch)
 perl(XML::Atom)
