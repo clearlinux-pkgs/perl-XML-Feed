@@ -7,7 +7,7 @@
 #
 Name     : perl-XML-Feed
 Version  : 0.65
-Release  : 39
+Release  : 40
 URL      : https://cpan.metacpan.org/authors/id/D/DA/DAVECROSS/XML-Feed-0.65.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DA/DAVECROSS/XML-Feed-0.65.tar.gz
 Summary  : 'XML Syndication Feed Support'
